@@ -1,0 +1,293 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    border: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+}
+
+#home {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 82px;
+    background-color: rgba(0, 0, 0, 0.806);
+    position: fixed;
+    font-family: 'DM Sans', sans-serif;
+    z-index: 1000; /* Ensure the navigation bar is on top */
+}
+
+#navlogo {
+    padding: 10px; /* Adjust as needed */
+}
+
+/* #navlogo a img {
+    max-height: 100%;
+    max-width: 100%;
+} */
+
+.logo {
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    color: #A6CF98;
+}
+
+#navlogo a {
+    text-decoration: none;
+}
+
+.nav_content {
+    display: flex;
+    align-items: center; /* Center the navigation links vertically */
+    text-decoration: none;
+}
+
+.class_quiz, .class_about, .class_game{
+    text-decoration: none;
+    color: #F2FFE9;
+}
+
+#S {
+    font-size: 70px;
+    font-weight: 900;
+    padding-top: 12px;
+    padding-left: 10px;
+}
+
+#oil {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 23px;
+    padding-top: 20px;
+}
+
+#quiz, #soil, #game {
+    font-size: 1.4em; /* Adjust as needed */
+    color: #F2FFE9;
+    padding: 0 40px; /* Adjust as needed */
+    text-decoration: none;
+}
+
+#home_img {
+    position: relative;
+    z-index: 1; /* Ensure the image is behind the navigation bar */
+}
+
+#home_img img {
+    width: 100%;
+    height: 100vh;
+}
+
+.img-text {
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FAF3E3;
+}
+
+.img-text h2 {
+    font-size: 6rem;
+    margin-top: 200px;
+    display: flex;
+}
+
+.img-text p {
+    font-size: 2.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.img-text h2, .img-text p {
+    animation: fadeIn 1.5s forwards;
+}
+
+#page2{
+    width: 100%;
+    height: 480vh;
+    background-color: black;
+}
+
+#page2_img{
+    width: 100%;
+    height: 100%;
+}
+
+#page2_img img{
+    width: 35%;
+    height: auto;
+    transform: translate(20%, 35%);
+    border-radius: 5%;
+}
+
+#page2_text {
+    position: absolute;
+    top: 135%;
+    left: 55%;
+    /* transform: translate(-50%, -50%); */
+    text-align: center;
+    color: #FAF3E3;
+    font-family: 'DM Sans', sans-serif; /* Add the desired font family */
+}
+
+#page2_text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#page2_text p {
+    font-size: 1.4rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#page2_line2{
+    padding: 50px;
+}
+
+#page3{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+#page3_text{
+    top: 190%;
+    left: 11.5%;
+    position: absolute;
+    color: #F2FFE9;
+    /* font-family: 'DM Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif; */
+    /* text-align: center; */
+}
+
+#page3_text{
+    /* font-size: 1.7rem; */
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+#page3_line2{
+    padding: 30px 70px;
+    font-size: 2em;
+    color: black;
+    background: linear-gradient(to right, transparent, white, transparent);
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#page3_line3{
+    font-family: 'DM Sans', sans-serif;
+    padding: 60px;
+    font-size: 1.5em;
+    color: #FAF3E3;
+    line-height: 40px;
+    text-align: center;
+}
+
+#bar{
+    width: 100%;
+    height: 100px;   
+}
+
+#soil_pollution{
+    text-align: left;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5em;
+
+}
+
+#about_soil_pollution{
+    font-family: 'Josefin Sans', sans-serif;
+    padding-bottom: 40px;
+    padding-top: 150px;
+    font-size: 3.5em;
+}
+
+#odered_list{
+    font-size: 1.5em;
+    padding-top: 50px;
+}
+
+.strong{
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 30px;
+}
+
+.list_item{
+    padding-top: 30px;
+}
+
+.list2{
+    padding-top: 10px;
+}
+
+.ending{
+    font-size: 1.7em;
+    padding-top: 60px;
+}
+
+.photo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pi_chart, .india {
+    width: 48%; /* Adjust the width as needed */
+}
+
+.pi_chart img, .india img {
+    padding-top: 200px;
+    width: 100%;
+    height: auto;
+    /* border-radius: 5%; */
+}
+
+.world {
+    position: absolute;
+    left: 15%;
+    padding-top: 200px;
+}
+
+.world img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
